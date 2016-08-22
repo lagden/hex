@@ -1,0 +1,49 @@
+{
+  "name": "lagden-hex",
+  "version": "1.0.0",
+  "description": "Encode and decode",
+  "keywords": [
+    "hex",
+    "encode",
+    "decode"
+  ],
+  "bug": {
+    "url": "https://github.com/lagden/hex",
+    "email": "lagden@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Thiago Lagden",
+    "email": "lagden@gmail.com",
+    "url": "http://lagden.in"
+  },
+  "main": "index.js",
+  "repository": "lagden/hex",
+  "scripts": {
+    "report": "nyc report --reporter=html",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "pretest": "xo",
+    "test": "nyc ava"
+  },
+  "devDependencies": {
+    "ava": "0.16.0",
+    "coveralls": "2.11.12",
+    "nyc": "8.1.0",
+    "xo": "0.16.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "xo": {
+    "envs": [
+      "es6",
+      "node"
+    ],
+    "esnext": true
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "license"
+  ]
+}
