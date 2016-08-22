@@ -23,7 +23,7 @@ $ npm i -S lagden-hex
 
 ## Usage
 
-```javascript
+```js
 const hex = require('lagden-hex');
 const e = hex.encode('Tadashi'); // \u0054\u0061\u0064\u0061\u0073\u0068\u0069
 const d = hex.decode(e); // Tadashi
