@@ -2,8 +2,9 @@
 
 function encode(str) {
 	const result = [];
-	for (const char of str) {
-		const hex = char.charCodeAt(0).toString(16);
+	const len = str.length;
+	for (let i = 0; i < len; i++) {
+		const hex = str.charAt(i).charCodeAt(0).toString(16);
 		result.push(`\\u${((`000${hex}`).slice(-4))}`);
 	}
 	return result.join('');
