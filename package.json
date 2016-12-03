@@ -1,6 +1,6 @@
 {
   "name": "lagden-hex",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Encode and decode",
   "keywords": [
     "hex",
@@ -26,10 +26,10 @@
     "test": "nyc ava"
   },
   "devDependencies": {
-    "ava": "0.16.0",
-    "coveralls": "2.11.12",
-    "nyc": "8.1.0",
-    "xo": "0.16.0"
+    "ava": "0.17.0",
+    "coveralls": "2.11.15",
+    "nyc": "10.0.0",
+    "xo": "0.17.1"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -39,7 +39,8 @@
       "es6",
       "node"
     ],
-    "esnext": true
+    "esnext": true,
+    "semicolon": false
   },
   "files": [
     "index.js",
