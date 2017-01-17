@@ -27,5 +27,7 @@ function decode(hex, jsUnicode = true) {
 	return result.join('')
 }
 
-exports.encode = encode
-exports.decode = decode
+export {
+	encode,
+	decode
+}

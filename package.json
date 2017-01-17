@@ -1,6 +1,6 @@
 {
   "name": "lagden-hex",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Encode and decode",
   "keywords": [
     "hex",
@@ -17,34 +17,60 @@
     "email": "lagden@gmail.com",
     "url": "http://lagden.in"
   },
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "index.js",
   "repository": "lagden/hex",
   "scripts": {
+    "rm": "rm -rf dist",
+    "rollup": "npm run rm && BABEL_ENV=rollup rollup -c",
     "report": "nyc report --reporter=html",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
-    "test": "nyc ava"
+    "test": "BABEL_ENV=ava nyc ava",
+    "gzip": "find ./dist -name '*.js' -type f -exec sh -c 'gzip -c --best {} > {}.gz' \\;",
+    "build": "npm test && npm run rollup && npm run gzip"
   },
   "devDependencies": {
     "ava": "0.17.0",
     "coveralls": "2.11.15",
     "nyc": "10.0.0",
+    "rollup": "0.41.4",
+    "rollup-plugin-buble": "0.15.0",
     "xo": "0.17.1"
   },
   "engines": {
     "node": ">=6.0.0"
   },
+  "files": [
+    "index.js",
+    "dist",
+    "license",
+    "README.md"
+  ],
   "xo": {
     "envs": [
-      "es6",
-      "node"
+      "es6"
     ],
     "esnext": true,
     "semicolon": false
   },
-  "files": [
-    "index.js",
-    "license",
-    "README.md"
-  ]
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "env": {
+      "rollup": {
+        "presets": [
+          "es2015-rollup"
+        ]
+      },
+      "ava": {
+        "presets": [
+          "es2015"
+        ]
+      }
+    }
+  }
 }
