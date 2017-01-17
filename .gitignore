@@ -1,3 +1,5 @@
+dist
+
 # Logs
 logs
 *.log
@@ -45,4 +47,3 @@ jspm_packages
 
 # Yarn Integrity file
 .yarn-integrity
-dist
