@@ -1,6 +1,6 @@
 {
   "name": "lagden-hex",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Encode and decode",
   "keywords": [
     "hex",
@@ -17,7 +17,7 @@
     "email": "lagden@gmail.com",
     "url": "http://lagden.in"
   },
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.js",
   "module": "index.js",
   "repository": "lagden/hex",
   "scripts": {
@@ -28,6 +28,7 @@
     "pretest": "xo",
     "test": "BABEL_ENV=ava nyc ava",
     "gzip": "find ./dist -name '*.js' -type f -exec sh -c 'gzip -c --best {} > {}.gz' \\;",
+    "prebuild": "npm run rm",
     "build": "npm test && npm run rollup && npm run gzip"
   },
   "devDependencies": {

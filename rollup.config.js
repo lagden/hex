@@ -10,7 +10,6 @@ export default {
 	],
 	sourceMap: true,
 	targets: [
-		{dest: 'dist/index.cjs.js', format: 'cjs'},
-		{dest: 'dist/index.amd.js', format: 'amd'}
+		{dest: 'dist/index.js', format: 'umd'}
 	]
 }
