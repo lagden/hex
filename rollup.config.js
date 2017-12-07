@@ -3,13 +3,15 @@
 import buble from 'rollup-plugin-buble'
 
 export default {
-	entry: 'index.js',
-	moduleName: 'hex',
+	input: 'src/index.js',
+	output: {
+		file: 'dist/index.js',
+		format: 'umd',
+		name: 'hex',
+		sourcemap: true,
+		strict: true
+	},
 	plugins: [
 		buble()
-	],
-	sourceMap: true,
-	targets: [
-		{dest: 'dist/index.js', format: 'umd'}
 	]
 }
