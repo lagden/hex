@@ -1,7 +1,7 @@
 'use strict'
 
 import test from 'ava'
-import {encode, decode} from '../src'
+import {encode, decode} from '../.'
 
 test('Hexadecimal no formato Javascript Unicode', t => {
 	const result = encode('Tadashi')
