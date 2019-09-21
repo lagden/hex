@@ -33,6 +33,7 @@
     "prebuild": "npm test && rm -rf dist",
     "build": "rollup -c"
   },
+  "dependencies": {},
   "devDependencies": {
     "ava": "2.4.0",
     "esm": "3.2.25",

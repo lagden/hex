@@ -13,12 +13,15 @@
 [devDep]:        https://david-dm.org/lagden/hex#info=devDependencies
 [xo-img]:        https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:            https://github.com/sindresorhus/xo
+[registry]:      https://help.github.com/en/articles/configuring-npm-for-use-with-github-package-registry
 
 
 Encode and decode
 
 
 ## Install
+
+[Configure npm for use with GitHub Package Registry][registry] before install
 
 ```
 $ npm i -S @lagden/hex
