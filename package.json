@@ -1,6 +1,6 @@
 {
-  "name": "lagden-hex",
-  "version": "3.0.3",
+  "name": "@lagden/hex",
+  "version": "1.0.0",
   "description": "Encode and decode",
   "keywords": [
     "hex",
@@ -14,46 +14,35 @@
   "license": "MIT",
   "author": {
     "name": "Thiago Lagden",
-    "email": "lagden@gmail.com",
-    "url": "http://lagden.in"
+    "email": "lagden@gmail.com"
+  },
+  "repository": "lagden/hex",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "dist/index.js",
-  "repository": "lagden/hex",
-  "scripts": {
-    "rollup": "rollup -c",
-    "report": "nyc report --reporter=text-lcov | coveralls",
-    "pretest": "xo",
-    "test": "ava",
-    "pretest-cov": "npm run pretest",
-    "test-cov": "nyc ava",
-    "prebuild": "npm test",
-    "build": "rm -rf dist && npm run rollup",
-    "start": "npm run build"
-  },
   "files": [
     "dist",
-    "index.mjs",
     "license",
     "README.md"
   ],
+  "scripts": {
+    "report": "nyc report --reporter=text-lcov | coveralls",
+    "pretest": "xo",
+    "test": "ava",
+    "prebuild": "npm test && rm -rf dist",
+    "build": "rollup -c"
+  },
   "devDependencies": {
-    "ava": "0.25.0",
-    "esm": "3.0.28",
-    "nyc": "11.7.1",
-    "rollup": "0.58.2",
-    "rollup-plugin-buble": "0.19.2",
-    "xo": "0.20.3"
+    "ava": "2.4.0",
+    "esm": "3.2.25",
+    "rollup": "1.21.4",
+    "xo": "0.24.0"
   },
   "xo": {
-    "envs": [
-      "es6"
-    ],
-    "esnext": true,
-    "semicolon": false
-  },
-  "ava": {
-    "require": [
-      "esm"
-    ]
+    "semicolon": false,
+    "rules": {
+      "capitalized-comments": 0
+    }
   }
 }
