@@ -1,5 +1,5 @@
 {
-  "name": "@lagden/hex",
+  "name": "@tadashi/hex",
   "version": "1.0.0",
   "description": "Encode and decode",
   "keywords": [
@@ -17,9 +17,6 @@
     "email": "lagden@gmail.com"
   },
   "repository": "lagden/hex",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "dist/index.js",
   "files": [
     "dist",
@@ -37,8 +34,8 @@
   "devDependencies": {
     "ava": "2.4.0",
     "esm": "3.2.25",
-    "rollup": "1.21.4",
-    "xo": "0.24.0"
+    "rollup": "1.27.13",
+    "xo": "0.25.3"
   },
   "xo": {
     "semicolon": false,

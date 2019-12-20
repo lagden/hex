@@ -9,11 +9,8 @@
 [ci]:            https://travis-ci.org/lagden/hex
 [coveralls-img]: https://coveralls.io/repos/github/lagden/hex/badge.svg?branch=master
 [coveralls]:     https://coveralls.io/github/lagden/hex?branch=master
-[devDep-img]:    https://david-dm.org/lagden/hex/dev-status.svg
-[devDep]:        https://david-dm.org/lagden/hex#info=devDependencies
 [xo-img]:        https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:            https://github.com/sindresorhus/xo
-[registry]:      https://help.github.com/en/articles/configuring-npm-for-use-with-github-package-registry
 
 
 Encode and decode
@@ -21,10 +18,8 @@ Encode and decode
 
 ## Install
 
-[Configure npm for use with GitHub Package Registry][registry] before install
-
 ```
-$ npm i -S @lagden/hex
+$ npm i -S @tadashi/hex
 ```
 
 
