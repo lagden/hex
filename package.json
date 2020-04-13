@@ -32,10 +32,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "2.4.0",
+    "ava": "3.7.0",
     "esm": "3.2.25",
-    "rollup": "1.27.13",
-    "xo": "0.25.3"
+    "rollup": "2.6.1",
+    "xo": "0.29.1"
+  },
+  "ava": {
+    "require": ["esm"]
   },
   "xo": {
     "semicolon": false,

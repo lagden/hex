@@ -1,3 +1,5 @@
+/* eslint unicorn/prevent-abbreviations: 0 */
+
 'use strict'
 
 export function encode(str, unicode = true) {
@@ -20,7 +22,7 @@ export function decode(hex, unicode = true) {
 	const result = []
 	const len = _hex.length
 	for (let i = 0; i < len; i += 4) {
-		result.push(String.fromCharCode(parseInt(_hex.slice(i, i + 4), 16)))
+		result.push(String.fromCharCode(Number.parseInt(_hex.slice(i, i + 4), 16)))
 	}
 
 	return result.join('')
