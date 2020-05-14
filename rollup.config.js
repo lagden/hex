@@ -4,7 +4,7 @@ export default [{
 	input: 'src/index.js',
 	output: [
 		{
-			file: 'dist/index.es.js',
+			file: 'dist/index.mjs',
 			format: 'es',
 			name: 'hex',
 			sourcemap: true,
