@@ -2,7 +2,6 @@
 
 [![Build Status][ci-img]][ci]
 [![Coverage Status][coveralls-img]][coveralls]
-<!-- [![devDependency Status][devDep-img]][devDep] -->
 [![XO code style][xo-img]][xo]
 
 [ci-img]:        https://travis-ci.org/lagden/hex.svg

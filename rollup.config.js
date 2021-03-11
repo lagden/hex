@@ -1,16 +1,16 @@
 'use strict'
 
-export default [{
+const config = [{
 	input: 'src/index.js',
 	output: [
 		{
-			file: 'dist/index.mjs',
+			file: 'dist/index.js',
 			format: 'es',
 			name: 'hex',
 			sourcemap: true,
 			strict: false
 		}, {
-			file: 'dist/index.js',
+			file: 'dist/index.umd.js',
 			format: 'umd',
 			name: 'hex',
 			sourcemap: true,
@@ -18,3 +18,5 @@ export default [{
 		}
 	]
 }]
+
+export default config
