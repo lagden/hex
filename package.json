@@ -31,10 +31,10 @@
     "build": "rollup -c"
   },
   "devDependencies": {
-    "ava": "3.15.0",
+    "ava": "5.2.0",
     "esm": "3.2.25",
     "rollup": "2.41.1",
-    "xo": "0.38.2"
+    "xo": "0.53.1"
   },
   "ava": {
     "require": [
